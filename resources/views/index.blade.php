@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css files/style.css">
-    <link rel="icon" href="./images/coininvest.png">
+    <link rel="stylesheet" href="{{asset('data/css/style.css')}}">
+    <link rel="icon" href="{{asset('data/images/coininvest.png')}}">
     <title>coinvestcryptos.com</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
        <header >
         <!-- this is the logo container -->
         <div class="logo-container">
-            <img src="./images/coininvest22.png" alt="" class="logo">
+            <img src="{{asset('data/images/coininvest22.png')}}" alt="" class="logo">
         </div>
 
         <!-- this is the navigation bar  for the destop view -->
@@ -22,19 +22,19 @@
             <ul class="navlist">
                 <li class="tab">
                     <!-- these are the navbar links to different pages -->
-                    <a href="./index.html" class="link">home</a>
+                    <a href="{{route("index")}}" class="link">home</a>
                 </li>
                 <li class="tab">
                     <a href="#service" class="link">services</a>
                 </li>
                 <li class="tab">
-                    <a href="./html files/blog.html" class="link">blog</a>
+                    <a href="{{route("blog")}}" class="link">blog</a>
                 </li>
                 <li class="tab">
-                    <a href="./html files/about.html" class="link">about</a>
+                    <a href="{{route("about")}}" class="link">about</a>
                 </li>
                 <li class="tab">
-                    <a href="./html files/contact.html" class="link">contact</a>
+                    <a href="{{route("contact")}}" class="link">contact</a>
                 </li>
             </ul>
         </nav>
@@ -47,14 +47,14 @@
 
         <div class="menu-list" id="menu-items">
             <div class="menu-list-login">
-                 <img src="./images/1193.png" alt=""  id="close-sidebar" class="close-btn">
+                 <img src="{{asset('data/images/1193.png')}}" alt=""  id="close-sidebar" class="close-btn">
             </div>
          <ul class="list-items">
-            <li><a href="./index.html">home <img src="./images/arrow-24-xxl.png" alt="" class="arrow"> </a ></li>
-             <li><a href="./html files/contact.html">contact  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
-              <li><a href="./html files/blog.html">blog  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
-             <li><a href="./html files/about.html">about <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
-             <li><a href="./html files/how-it-works.html">how it works  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
+            <li><a href="{{route("index")}}">home <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"> </a ></li>
+             <li><a href="{{route("contact")}}">contact  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+              <li><a href="{{route("blog")}}">blog  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+             <li><a href="{{route("about")}}">about <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+             <li><a href="{{route("how_it_works")}}">how it works  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
          </ul>
         </div>
         <!-- this is the code for the hamburger menu in the mobile view -->
@@ -95,17 +95,17 @@
                 </div>
             </div>
             <div class="landpage-img-container">
-                <img src="./images/coininvest.png" alt="" class="landpage-img">
+                <img src="{{asset('data/images/coininvest.png')}}" alt="" class="landpage-img">
             </div>
         </div>
         <!-- this the the login form 'its a modal' -->
         <div class="login-modal" id="modal-pop-up">
             <!-- the form wrapper wraps the image and the form  -->
             <div class="form-wrapper">
-                <img src="./images/login-img.jpg" alt="" class="login-img">
+                <img src="{{asset('data/images/login-img.jpg')}}" alt="" class="login-img">
                 <div class="form-container">
                         <div class="modal-closebtn-container">
-                            <img src="./images/1193.png" alt="" class="modal-close-btn" id="close-modal">
+                            <img src="{{asset('data/images/1193.png')}}" alt="" class="modal-close-btn" id="close-modal">
                         </div>
                         <!-- this is where the form starts  -->
                         <form action="#" class="login-form">
@@ -130,10 +130,10 @@
         <!-- the is the register form modal  -->
         <div class="login-modal" id="register-pop-up">
             <div class="form-wrapper">
-                <img src="./images/20945517.jpg" alt="" class="login-img">
+                <img src="{{asset('data/images/20945517.jpg')}}" alt="" class="login-img">
                 <div class="form-container">
                 <div class="modal-closebtn-container">
-                    <img src="./images/1193.png" alt="" class="modal-close-btn" id="close-register-modal">
+                    <img src="{{asset('data/images/1193.png')}}" alt="" class="modal-close-btn" id="close-register-modal">
                 </div>
                     <!-- this is the register form 'it has the same class bcos i style it with the login' -->
                     <form action="#" class="login-form">
@@ -158,13 +158,13 @@
         <!-- this is the why choose us text  -->
         <div class="why-text-container">
             <h1 >why choose <span class="green-text">coinvestcrypto</span> ?</h1>
-            <img src="./images/5031659.jpg" alt="">
+            <img src="{{asset('data/images/5031659.jpg')}}" alt="">
         </div>
         <!-- the reason card contains the cards that tell what coinvest offers  -->
         <div class="reason-card-container">
             <!-- this is the first card  -->
             <div class="reason-card">
-                <img src="./images/shield.gif" alt="" class="icon">
+                <img src="{{asset('data/images/shield.gif')}}" alt="" class="icon">
                 <h1>protection and security</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Facilis non minus repudiandae exercitationem fugit,
@@ -172,7 +172,7 @@
             </div>
             <!-- 2nd card  -->
             <div class="reason-card">
-                <img src="./images/social-media.gif" alt="" class="icon">
+                <img src="{{asset('data/images/social-media.gif')}}" alt="" class="icon">
                 <h1>licensed exchange</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Facilis non minus repudiandae exercitationem fugit,
@@ -181,7 +181,7 @@
             </div>
             <!-- 3rd card  -->
             <div class="reason-card">
-                <img src="./images/laptop.gif" alt="" class="icon">
+                <img src="{{asset('data/images/laptop.gif')}}" alt="" class="icon">
                 <h1>unlimited transactions</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Facilis non minus repudiandae exercitationem fugit,
@@ -195,7 +195,7 @@
     <section class="how-does-it-work-section" id="text">
         <!-- how it works image  -->
         <div class="how-it-works-img-container">
-            <img src="./images/IMG-20220214-WA0058.jpg" alt="">
+            <img src="{{asset('data/images/IMG-20220214-WA0058.jpg')}}" alt="">
         </div>
         <!-- this holds the text that explains how the platform works   -->
         <div class="how-it-works-text-container">
@@ -211,7 +211,7 @@
                         <span class="circle" aria-hidden="true">
                         <span class="icon arrow"></span>
                         </span>
-                        <a href="./html files/how-it-works.html" class="button-text">Learn More</a>
+                        <a href="{{route("how_it_works")}}" class="button-text">Learn More</a>
                     </button>
                 </div>
         </div>
@@ -235,7 +235,7 @@
                 <!-- this is the first service card  -->
                 <div class="service-card">
                     <div class="overlay">
-                    <img src="./images/digital-key.png" alt="" class="icon">
+                    <img src="{{asset('data/images/digital-key.png')}}" alt="" class="icon">
                     <h2>advice and guides</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo sint veniam?</p>
                     </div>
@@ -243,7 +243,7 @@
                 <!-- 2nd card  -->
                 <div class="service-card">
                     <div class="overlay green">
-                        <img src="./images/finance.png" alt="" class="icon">
+                        <img src="{{asset('data/images/finance.png')}}" alt="" class="icon">
                         <h2>support in person</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo sint veniam?</p>
                     </div>
@@ -251,7 +251,7 @@
                 <!-- 3rd  -->
                 <div class="service-card">
                     <div class="overlay sky-blue">
-                        <img src="./images/exchange.png" alt="" class="icon">
+                        <img src="{{asset('data/images/exchange.png')}}" alt="" class="icon">
                         <h2>recurring buys</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo sint veniam?</p>
                     </div>
@@ -266,7 +266,7 @@
         <h1 class="liveprice-header"> cryptocurrently live price table
             <br><span class="line"></span>
         </h1>
-        <img src="./images/forex-trading-background_52683-41604.webp" alt="">
+        <img src="{{asset('data/images/forex-trading-background_52683-41604.webp')}}" alt="">
         <!-- this content is just a demo  -->
     </section>
 
@@ -288,11 +288,11 @@
             <!-- this is the process card 1  -->
             <div class="icon-container">
                 <div class="counter-container">
-                    <img src="./images/dark_line_short.png" alt="" class="darkline">
+                    <img src="{{asset('data/images/dark_line_short.png')}}" alt="" class="darkline">
                     <div class="counter">
                         1
                     </div>
-                    <img src="./images/dark_line_short.png" alt="" class="darkline">
+                    <img src="{{asset('data/images/dark_line_short.png')}}" alt="" class="darkline">
                 </div>
 
                 <div class="process-card">
@@ -303,30 +303,30 @@
             <!-- card 2 -->
             <div class="icon-container">
                 <div class="counter-container">
-                    <img src="./images/dark_line_short.png" alt="" class="darkline">
+                    <img src="{{asset('data/images/dark_line_short.png')}}" alt="" class="darkline">
                     <div class="counter">
                         2
                     </div>
-                    <img src="./images/dark_line_short.png" alt="" class="darkline">
+                    <img src="{{asset('data/images/dark_line_short.png')}}" alt="" class="darkline">
                 </div>
 
                 <div class="process-card">
-                    <img src="./images/salary.png" alt="" class="icon">
+                    <img src="{{asset('data/images/salary.png')}}" alt="" class="icon">
                     <h1>make payment</h1>
                 </div>
             </div>
             <!-- card 3 -->
             <div class="icon-container">
                 <div class="counter-container">
-                    <img src="./images/dark_line_short.png" alt="" class="darkline">
+                    <img src="{{asset('data/images/dark_line_short.png')}}" alt="" class="darkline">
                     <div class="counter">
                         3
                     </div>
-                    <img src="./images/dark_line_short.png" alt="" class="darkline">
+                    <img src="{{asset('data/images/dark_line_short.png')}}" alt="" class="darkline">
                 </div>
 
                 <div class="process-card">
-                    <img src="./images/exchange.png" alt="" class="icon">
+                    <img src="{{asset('data/images/exchange.png')}}" alt="" class="icon">
                     <h1>buy and sell</h1>
                 </div>
             </div>
@@ -378,12 +378,12 @@
     <section class="blog-section">
         <!-- this is the first blog card  -->
         <div class="blog-card">
-            <img src="./images/2444379.jpg" alt="" class="blog-img">
+            <img src="{{asset('data/images/2444379.jpg')}}" alt="" class="blog-img">
             <div class="blog-info">
                 <!-- the blog post date goes here  -->
                 <div class="blog-date">
                     <h1>posted on 17th november 2022</h1>
-                    <img src="./images/comment.png" alt="" class="message-icon">
+                    <img src="{{asset('data/images/comment.png')}}" alt="" class="message-icon">
                 </div>
                 <!-- the name of the poster goes here  -->
                 <div class="posted-by">
@@ -404,7 +404,7 @@
             <div class="blog-info">
                 <div class="blog-date">
                     <h1>posted on 17th november 2022</h1>
-                    <img src="./images/comment.png" alt="" class="message-icon">
+                    <img src="{{asset('data/images/comment.png')}}" alt="" class="message-icon">
                 </div>
                 <div class="posted-by">
                     <p>by venala: cryptocurrency</p>
@@ -420,7 +420,7 @@
     <!-- end of blog section  -->
     <!-- this is the register section  -->
     <section class="register-section">
-        <img  src="./images/20945517.jpg" alt="" class="svg-img">
+        <img  src="{{asset('data/images/20945517.jpg')}}" alt="" class="svg-img">
         <div class="register-text">
             <p>register today to receive updates and be part of us</p>
         </div>
@@ -456,19 +456,19 @@
                 </li>
             </ul>
             <div class="social-media-handle">
-                <img src="./images/facebook.png" alt="" class="social-icon">
-                <img src="./images/insta.png" alt="" class="social-icon">
-                <img src="./images/whatsapp.png" alt="" class="social-icon">
-                <img src="./images/git.png" alt="" class="social-icon">
-                <img src="./images/mail.png" alt="" class="social-icon">
+                <img src="{{asset('data/images/facebook.png')}}" alt="" class="social-icon">
+                <img src="{{asset('data/images/insta.png')}}" alt="" class="social-icon">
+                <img src="{{asset('data/images/whatsapp.png')}}" alt="" class="social-icon">
+                <img src="{{asset('data/images/git.png')}}" alt="" class="social-icon">
+                <img src="{{asset('data/images/mail.png')}}" alt="" class="social-icon">
             </div>
         </div>
         <!-- second division  -->
         <div class="foot1">
             <h2>contact me</h2>
-            <li ><img src="./images/paper-plane.png" alt=""class="my-img"> <a href="#">@emmanula/twitter.com</a></li>
-            <li ><img src="./images/paper-plane.png" alt=""class="my-img"> <a href="#">www.google.com</a></li>
-            <li ><img src="./images/paper-plane.png" alt=""class="my-img"> <a href="#">+234 7042244539</a></li>
+            <li ><img src="{{asset('data/images/paper-plane.png')}}" alt=""class="my-img"> <a href="#">@emmanula/twitter.com</a></li>
+            <li ><img src="{{asset('data/images/paper-plane.png')}}" alt=""class="my-img"> <a href="#">www.google.com</a></li>
+            <li ><img src="{{asset('data/images/paper-plane.png')}}" alt=""class="my-img"> <a href="#">+234 7042244539</a></li>
         </div>
         <!-- 3rd division  -->
 
@@ -481,6 +481,6 @@
             <input type="email" name="" id="" placeholder="enter your email" class="input">
         </div>
     </footer>
-    <script src="./js files/main.js"></script>
+    <script src="{{asset('data/js files/main.js')}}"></script>
 </body>
 </html>
