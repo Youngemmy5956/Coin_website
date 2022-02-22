@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css files/style.css">
-    <link rel="icon" href="./images/coininvest.png">
+    <link rel="stylesheet" href="{{asset('data/css/style.css')}}">
+    <link rel="icon" href="{{asset('data/images/coininvest.png')}}">
     <title>coinvestcryptos.com</title>
 </head>
-<body> 
+<body>
        <!-- this is the header section that contains the logo and the navigation bars   -->
-       <header > 
+       <header >
         <!-- this is the logo container -->
         <div class="logo-container">
-            <img src="./images/coininvest22.png" alt="" class="logo">
+            <img src="{{asset('data/images/coininvest22.png')}}" alt="" class="logo">
         </div>
 
         <!-- this is the navigation bar  for the destop view -->
@@ -51,15 +51,15 @@
             </div>
          <ul class="list-items">
             <li><a href="./index.html">home <img src="./images/arrow-24-xxl.png" alt="" class="arrow"> </a ></li>
-             <li><a href="./html files/contact.html">contact  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>            
+             <li><a href="./html files/contact.html">contact  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
               <li><a href="./html files/blog.html">blog  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
              <li><a href="./html files/about.html">about <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
              <li><a href="./html files/how-it-works.html">how it works  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
          </ul>
         </div>
         <!-- this is the code for the hamburger menu in the mobile view -->
-        
-        
+
+
         <div class="login-container">
             <button class="login-button" id="loginBtn">
                 <span></span>
@@ -75,7 +75,7 @@
               </button>
         </div>
     </header>
-<!-- end of the header section --> 
+<!-- end of the header section -->
 
 <!-- this is the beginning of the landpage section ie first-site of the website  -->
     <section class="landpage">
@@ -106,7 +106,7 @@
                 <div class="form-container">
                         <div class="modal-closebtn-container">
                             <img src="./images/1193.png" alt="" class="modal-close-btn" id="close-modal">
-                        </div>   
+                        </div>
                         <!-- this is where the form starts  -->
                         <form action="#" class="login-form">
                         <label for="email" class="login-label">enter you email address</label>
@@ -115,7 +115,7 @@
                         <input type="password" name="password-input" class="login-input" id="password" >
                         <label for="password" class="login-label">confirm your password</label>
                         <input type="password" name="password-input" class="login-input" id="password" >
-                        <div class="button-container"> 
+                        <div class="button-container">
                             <button type="submit" class="login-button">login</button>
                         </div>
                         </form>
@@ -143,7 +143,7 @@
                     <input type="password" name="password-input" class="login-input" id="password" >
                     <label for="password" class="login-label">confirm your password</label>
                     <input type="password" name="password-input" class="login-input" id="password" >
-                    <div class="button-container"> 
+                    <div class="button-container">
                         <button type="submit" class="login-button">register</button>
                     </div>
                     </form>
@@ -166,25 +166,25 @@
             <div class="reason-card">
                 <img src="./images/shield.gif" alt="" class="icon">
                 <h1>protection and security</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Facilis non minus repudiandae exercitationem fugit, 
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Facilis non minus repudiandae exercitationem fugit,
                 </p>
             </div>
             <!-- 2nd card  -->
             <div class="reason-card">
                 <img src="./images/social-media.gif" alt="" class="icon">
                 <h1>licensed exchange</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Facilis non minus repudiandae exercitationem fugit, 
-                    
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Facilis non minus repudiandae exercitationem fugit,
+
                 </p>
             </div>
             <!-- 3rd card  -->
             <div class="reason-card">
                 <img src="./images/laptop.gif" alt="" class="icon">
                 <h1>unlimited transactions</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Facilis non minus repudiandae exercitationem fugit, 
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Facilis non minus repudiandae exercitationem fugit,
                 </p>
             </div>
         </div>
@@ -200,8 +200,8 @@
         <!-- this holds the text that explains how the platform works   -->
         <div class="how-it-works-text-container">
             <h1>how does it <span class="green-text">work</span> ?</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Reprehenderit consectetur, quos fugiat vero nobis officia. 
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Reprehenderit consectetur, quos fugiat vero nobis officia.
                 Quam, culpa quasi repudiandae est neque facilis porro modi laboriosam
                 , excepturi animi id vel mollitia.</p>
 
@@ -213,8 +213,8 @@
                         </span>
                         <a href="./html files/how-it-works.html" class="button-text">Learn More</a>
                     </button>
-                </div>       
-        </div>    
+                </div>
+        </div>
     </section>
 <!-- this is the end of how it works section  -->
 
@@ -275,9 +275,9 @@
         <h1>about coinvestcrypto
             <br><span class="line"></span>
         </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis 
-            dolorum laboriosam voluptates voluptate fugit maxime eum ex veniam 
-            sint dolores quos illo aliquam, animi nulla iste placeat hic officiis tempore sapiente? 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            dolorum laboriosam voluptates voluptate fugit maxime eum ex veniam
+            sint dolores quos illo aliquam, animi nulla iste placeat hic officiis tempore sapiente?
             Totam consectetur at delectus explicabo aliquam incidunt, et ad!
         </p>
         <!-- this is the start now button  -->
@@ -294,7 +294,7 @@
                     </div>
                     <img src="./images/dark_line_short.png" alt="" class="darkline">
                 </div>
-                
+
                 <div class="process-card">
                     <img src="./images/wallet.png" alt="" class="icon">
                     <h1>create a wallet</h1>
@@ -309,7 +309,7 @@
                     </div>
                     <img src="./images/dark_line_short.png" alt="" class="darkline">
                 </div>
-                
+
                 <div class="process-card">
                     <img src="./images/salary.png" alt="" class="icon">
                     <h1>make payment</h1>
@@ -324,7 +324,7 @@
                     </div>
                     <img src="./images/dark_line_short.png" alt="" class="darkline">
                 </div>
-                
+
                 <div class="process-card">
                     <img src="./images/exchange.png" alt="" class="icon">
                     <h1>buy and sell</h1>
@@ -433,7 +433,7 @@
                </svg>
              </button>
            </div>
-     
+
         <div class="coin-container"></div>
     </section>
     <!-- footer section -->
