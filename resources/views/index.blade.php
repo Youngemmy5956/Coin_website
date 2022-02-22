@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset('data/css/style.css')}}">
-    <link rel="icon" href="{{asset('data/images/coininvest.png')}}">
+    <link rel="stylesheet" href="./css files/style.css">
+    <link rel="icon" href="./images/coininvest.png">
     <title>coinvestcryptos.com</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
        <header >
         <!-- this is the logo container -->
         <div class="logo-container">
-            <img src="{{asset('data/images/coininvest22.png')}}" alt="" class="logo">
+            <img src="./images/coininvest22.png" alt="" class="logo">
         </div>
 
         <!-- this is the navigation bar  for the destop view -->
