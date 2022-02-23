@@ -296,7 +296,7 @@
                 </div>
 
                 <div class="process-card">
-                    <img src="./images/wallet.png" alt="" class="icon">
+                    <img src="{{asset('data/images/wallet.png')}}" alt="" class="icon">
                     <h1>create a wallet</h1>
                 </div>
             </div>
@@ -400,7 +400,7 @@
         <!-- 2nd blog card  -->
         <!-- same thing applies  -->
         <div class="blog-card">
-            <img src="./images/761.jpg" alt="" class="blog-img">
+            <img src="{{asset('data/images/761.jpg')}}" alt="" class="blog-img">
             <div class="blog-info">
                 <div class="blog-date">
                     <h1>posted on 17th november 2022</h1>
