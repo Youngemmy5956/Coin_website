@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>how it works</title>
-    <link rel="stylesheet" href="{{asset('data/css files/general.css')}}">
-    <link rel="stylesheet" href="{{asset('data/css files/how.css')}}">
+    <link rel="stylesheet" href="{{asset('data/css/general.css')}}">
+    <link rel="stylesheet" href="{{asset('data/css/how.css')}}">
     <link rel="icon" href="{{asset('data/images/coininvest.png')}}">
 </head>
 <body>
@@ -49,7 +49,7 @@
          <ul class="list-items">
             <li><a href="{{route("index")}}">home <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"> </a ></li>
              <li><a href="{{route("contact")}}">contact  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
-              <li><a href="{{route(blog")}}">blog  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+              <li><a href="{{route("blog")}}">blog  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
              <li><a href="{{route("about")}}">about <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
              <li><a href="{{route("how_it_works")}}">how it works  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
          </ul>
@@ -66,7 +66,7 @@
 <!-- this is the how it works land page  -->
     <section class="how-landpage">
         <div class="landpage-img">
-            <img src="../images/business-people-with-balance-scales-bitcoin-vs-dollar-person-trading-buying-crypto-currency-flat-vector-illustration-stock-crypto-market-concept-banner-website-design-landing-web-page_179970-6615.webp" alt="">
+            <img src="{{('data/images/business-people-with-balance-scales-bitcoin-vs-dollar-person-trading-buying-crypto-currency-flat-vector-illustration-stock-crypto-market-concept-banner-website-design-landing-web-page_179970-6615.webp')}}" alt="">
         </div>
         <!-- this is the welcome text  -->
         <div class="welcome-text">
